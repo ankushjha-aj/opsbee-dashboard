@@ -8,7 +8,7 @@ import { Button } from "./ui/button"
 import { Label } from "./ui/label"
 import { Textarea } from "./ui/textarea"
 //import { addTask } from "./app/actions"
-import { type Task, TaskStatus } from "../types"
+import { type Task} from "../types" 
 import { format } from "date-fns"
 
 interface TaskModalProps {
@@ -18,7 +18,7 @@ interface TaskModalProps {
   onTaskCreated: (task: Task) => void
 }
 
-export default function TaskModal({ user, date, onClose, onTaskCreated }: TaskModalProps) {
+export default function TaskModal({ user, date, onClose }: TaskModalProps) {
   const [description, setDescription] = useState("")
   const [isSubmitting, setIsSubmitting] = useState(false)
 
