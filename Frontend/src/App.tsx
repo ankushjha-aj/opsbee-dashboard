@@ -22,7 +22,7 @@ import { DateCalendar } from "@mui/x-date-pickers/DateCalendar";
 import { AddMembers } from "./components/AddMembers";
 
 // Team members
-const URL = "http://localhost:1111";
+const URL = import.meta.env.VITE_SERVER_URI;
 
 export default function App() {
   const [date, setDate] = useState<Date>(new Date());
