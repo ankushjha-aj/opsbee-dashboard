@@ -1,0 +1,17 @@
+{
+    "name": "opsbee-dashboard",
+    "version": "1.0.0",
+    "description": "OpsBee Dashboard",
+    "main": "index.js",
+    "scripts": {
+        "start": "node Backend/index.js",
+        "build": "cd Frontend && npm install && npm run build"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.3",
+        "express": "^4.18.2",
+        "opsbee-dashboard": "file:",
+        "pg": "^8.9.0"
+    }
+}
