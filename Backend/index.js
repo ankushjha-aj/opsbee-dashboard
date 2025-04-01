@@ -108,7 +108,7 @@ app.get('/api/tasks/date/:date', async (req, res) => {
       
       // Corrected SQL Query
       const result = await pool.query(
-        "SELECT * FROM Task WHERE date BETWEEN $1::date - INTERVAL '1 day' AND $1::date + INTERVAL '6 days' ORDER BY person ASC",
+        "SELECT * FROM Task WHERE date BETWEEN $1::date - INTERVAL '3 day' AND $1::date + INTERVAL '3 days' ORDER BY person ASC",
         [date]
       );
   
