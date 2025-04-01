@@ -40,7 +40,7 @@ export default function App() {
     const dates: string[] = [];
     const currentDate = new Date(date);
     const dateFormat: string = "yyyy-MM-dd";
-    for (let i = -3; i < 3; i++) {
+    for (let i = -2; i < 3; i++) {
       const newDate = new Date(currentDate);
       newDate.setDate(newDate.getDate() + i);
       dates.push(format(newDate, dateFormat));
